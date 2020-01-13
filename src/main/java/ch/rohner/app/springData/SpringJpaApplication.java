@@ -17,6 +17,6 @@ public class SpringJpaApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        employeeHandler.doAll();
+        employeeHandler.showData();
     }
 }

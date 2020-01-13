@@ -14,7 +14,8 @@ public class EmployeeHandler {
     @Autowired
     private EmployeeService employeeService;
 
-    public void doAll() {
+    public void showData() {
+        log.info("showData>");
         showAllEmployees();
         showEmployeesByRole("DEV");
         showEmployeesByRole("GURU");
@@ -37,6 +38,7 @@ public class EmployeeHandler {
         getEmployeesByRoleAndMinSalary("read", 98800.01f);
         getEmployeesByRoleAndMinSalary("nobody", .01f);
         getEmployeesByRoleAndMinSalary("", -1);
+        log.info("showData<");
     }
 
     private void showAllEmployees() {
